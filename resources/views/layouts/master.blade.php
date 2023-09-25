@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,10 +14,31 @@
 </head>
 <body>
 
-    
+<!-- Grey with black text -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark mb-5">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="{{route('fooldal')}}">Fő oldal</a>
+        </li>
+       <li class="nav-item">
+          <a class="nav-link" href="{{route('felveteloldal')}}">Feltöltés</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{route('listaoldal')}}" >Lista</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
     @yield('content')
 
+
+    <footer class="container-fluid bg-dark text-white mt-6 mt-5">
+        <div class="row col12">
+            <div class="p-5">lábléc</div>
+        </div>
+    </footer>
 
 </body>
 </html>
